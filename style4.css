@@ -1,0 +1,10 @@
+body,
+html{
+	width: 100%;
+	height: 100%;
+	background: url(ProChat.JPG)no-repeat center center fixed;
+	background-size: cover;	
+	margin-bottom: 0px;
+h1{
+	color: purple;
+}

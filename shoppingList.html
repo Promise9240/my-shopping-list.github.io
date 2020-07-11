@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>toDoslist</title>
+	<style type="text/css">
+		body {
+			background:linear-gradient(to right, #5D9AE2, #C43EF1);
+			font-style: 'monserrat', sans-serif;
+			font-size: 20px;
+			
+			
+}
+		.shop {
+			background-color: antiquewhite;
+			width: 500px;
+			text-align: center;
+			margin-left: 350px;
+			height:500px;
+			border-radius: 5px;
+			
+}
+button{
+	background:linear-gradient(to right, #5D9AE2, #C43EF1);
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+}
+input[type=text] {
+	border: none;
+	border-bottom: 1px solid black;
+
+}
+</style>
+</head>
+<body>
+<div class="shop">
+<h1><strong>Shopping List</strong></h1>
+
+<p id="first">Get it done today</p>
+<p id="second">We help you arrange your To do list in relative to their impotance</p>
+<input id="userinput" type="text" placeholder="enter items">
+<p></p><button id="enter">Enter</button></p>
+<ul>
+<li>enter items according to thier importance</li>
+</div>
+<script type="text/javascript">
+var button=document.getElementById("enter");
+var input=document.getElementById("userinput");
+var ul =document.querySelector("ul");
+var li = document.createElement("li");
+	document.getElementById("enter").onclick = () => {
+		if(input.value.length > 0){
+			var li = document.createElement("li");
+			li.appendChild(document.createTextNode(input.value))
+			ul.appendChild(li);
+			input.value="";
+		
+	}
+
+}
+
+
+</script>
+
+</body>
+</html>
